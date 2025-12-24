@@ -1,8 +1,8 @@
 package com.bank.banking_app.service;
 
-import com.bank.banking_app.AccountStatus;
 import com.bank.banking_app.dto.request.LoginRequest;
 import com.bank.banking_app.dto.response.LoginResponse;
+import com.bank.banking_app.enums.KycStatus;
 import com.bank.banking_app.exception.AccountNotActiveException;
 import com.bank.banking_app.exception.InvalidCredentialsException;
 import com.bank.banking_app.models.Account;
@@ -36,7 +36,7 @@ public class AuthService {
            Account account = accountRepository.findByUser(user)
                    .orElseThrow(()->new AccountNotActiveException("Account Not Found"));
 
-           if(account.getStatus() != AccountStatus.ACTIVE)
+           if(account.getStatus() != KycStatus.AccountStatus.ACTIVE)
                throw new AccountNotActiveException("Your Account is not Active");
 
            LoginResponse response = new LoginResponse();

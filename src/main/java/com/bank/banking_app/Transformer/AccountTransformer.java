@@ -1,8 +1,8 @@
 package com.bank.banking_app.Transformer;
 
-import com.bank.banking_app.AccountStatus;
 import com.bank.banking_app.dto.response.OpenAccountResponse;
 import com.bank.banking_app.enums.AccountType;
+import com.bank.banking_app.enums.KycStatus;
 import com.bank.banking_app.models.Account;
 import com.bank.banking_app.models.Users;
 
@@ -13,7 +13,7 @@ public class AccountTransformer {
         public static Account accountRequestToAccount(String accountNumber,
                                                       AccountType accountType,
                                                       BigDecimal balance,
-                                                      AccountStatus status,
+                                                      KycStatus.AccountStatus status,
                                                       Users user) {
             return Account.builder()
                     .accountNumber(accountNumber)

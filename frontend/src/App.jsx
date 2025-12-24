@@ -9,6 +9,8 @@ import Transfer from './pages/Transfer';
 import Transactions from './pages/Transactions';
 import Accounts from './pages/Accounts';
 import Settings from './pages/Settings';
+import Deposit from './pages/Deposit';
+import Withdraw from './pages/Withdraw';
 
 function ProtectedRoute({ children }) {
   const { isAuthenticated, loading } = useAuth();
@@ -73,6 +75,8 @@ function AppRoutes() {
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="accounts" element={<Accounts />} />
         <Route path="transfer" element={<Transfer />} />
+        <Route path="deposit" element={<Deposit />} />
+        <Route path="withdraw" element={<Withdraw />} />
         <Route path="transactions" element={<Transactions />} />
         <Route path="profile" element={<Profile />} />
         <Route path="settings" element={<Settings />} />

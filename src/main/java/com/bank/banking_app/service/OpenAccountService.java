@@ -1,17 +1,16 @@
 package com.bank.banking_app.service;
 
-import com.bank.banking_app.AccountStatus;
 import com.bank.banking_app.Transformer.AccountTransformer;
 import com.bank.banking_app.Transformer.UserTransformer;
 import com.bank.banking_app.dto.request.OpenAccountRequest;
 import com.bank.banking_app.dto.response.OpenAccountResponse;
+import com.bank.banking_app.enums.KycStatus;
 import com.bank.banking_app.exception.BadRequestException;
 import com.bank.banking_app.models.Account;
 import com.bank.banking_app.models.Users;
 import com.bank.banking_app.repository.AccountRepository;
 import com.bank.banking_app.repository.UserRepository;
 import jakarta.transaction.Transactional;
-import jakarta.transaction.UserTransaction;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -51,7 +50,7 @@ public class OpenAccountService {
                 generateAccountNumber(),
                 request.getAccountType(),
                 request.getInitialDeposit(),
-                AccountStatus.ACTIVE,
+                KycStatus.AccountStatus.ACTIVE,
                 savedUser
         );
         Account savedAccount = accountRepository.save(account);

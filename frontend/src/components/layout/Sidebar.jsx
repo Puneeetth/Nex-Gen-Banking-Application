@@ -9,7 +9,9 @@ import {
     LogOut,
     Wallet,
     ChevronLeft,
-    ChevronRight
+    ChevronRight,
+    Plus,
+    Minus
 } from 'lucide-react';
 import { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
@@ -18,6 +20,8 @@ const navItems = [
     { path: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
     { path: '/accounts', icon: CreditCard, label: 'Accounts' },
     { path: '/transfer', icon: ArrowLeftRight, label: 'Transfer' },
+    { path: '/deposit', icon: Plus, label: 'Deposit' },
+    { path: '/withdraw', icon: Minus, label: 'Withdraw' },
     { path: '/transactions', icon: History, label: 'Transactions' },
     { path: '/profile', icon: User, label: 'Profile' },
     { path: '/settings', icon: Settings, label: 'Settings' },

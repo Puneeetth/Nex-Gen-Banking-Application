@@ -1,6 +1,5 @@
 package com.bank.banking_app.dto.response;
 
-import com.bank.banking_app.AccountStatus;
 import com.bank.banking_app.enums.AccountType;
 import com.bank.banking_app.enums.KycStatus;
 import lombok.AllArgsConstructor;
@@ -22,7 +21,7 @@ public class MeResponse {
     private String accountNumber;
     private AccountType accountType;
     private BigDecimal balance;
-    private AccountStatus status;
+    private KycStatus.AccountStatus status;
 
     private KycStatus kycStatus;
 }

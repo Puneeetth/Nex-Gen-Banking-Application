@@ -23,9 +23,5 @@ public class AuthController {
         return ResponseEntity.ok(authService.login(request));
     }
 
-    @GetMapping("/secure")
-    public String secure() {
-        return "JWT is valid";
-    }
 
 }

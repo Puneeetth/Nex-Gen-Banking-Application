@@ -1,7 +1,7 @@
 package com.bank.banking_app.models;
 
-import com.bank.banking_app.AccountStatus;
 import com.bank.banking_app.enums.AccountType;
+import com.bank.banking_app.enums.KycStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -31,7 +31,7 @@ public class Account {
     private BigDecimal balance;
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private AccountStatus status;
+    private KycStatus.AccountStatus status;
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private Users user;
     @Column(nullable = false)
