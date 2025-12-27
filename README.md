@@ -256,14 +256,27 @@ Run the test suite:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## images
+## 📸 Screenshots
 
-![Architecture Diagram](images/image.png)
-![Architecture Diagram](images/image copy.png)
-![Architecture Diagram](images/image copy 2.png)
-![Architecture Diagram](images/image copy 3.png)
-![Architecture Diagram](images/image copy 4.png)
-![Architecture Diagram](images/image copy 5.png)
-![Architecture Diagram](images/image copy 6.png)
+### Dashboard
+![Dashboard](images/image.png)
+
+### Accounts
+![Accounts](images/image%20copy.png)
+
+### Transfer Amount
+![Transfer Amount](images/image%20copy%202.png)
+
+### Deposit Funds
+![Deposit Funds](images/image%20copy%203.png)
+
+### Withdraw
+![Withdraw](images/image%20copy%204.png)
+
+### User Profile
+![User Profile](images/image%20copy%205.png)
+
+### Settings
+![Settings](images/image%20copy%206.png)
 
 <p align="center">Made with ❤️ using Spring Boot</p>
