@@ -247,11 +247,6 @@ Run the test suite:
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
 
 ## 🤝 Contributing
 
@@ -262,5 +257,11 @@ This project is licensed under the MIT License.
 5. Open a Pull Request
 
 ---
+```
+images
+```
+```
+![alt text](image.png)
 
+```
 <p align="center">Made with ❤️ using Spring Boot</p>
