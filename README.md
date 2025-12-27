@@ -255,13 +255,6 @@ Run the test suite:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+![Architecture Diagram](images/image.png)
 
----
-```
-images
-```
-```
-![alt text](image.png)
-
-```
 <p align="center">Made with ❤️ using Spring Boot</p>
