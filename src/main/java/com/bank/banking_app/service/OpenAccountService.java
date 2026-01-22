@@ -11,20 +11,16 @@ import com.bank.banking_app.models.Users;
 import com.bank.banking_app.repository.AccountRepository;
 import com.bank.banking_app.repository.UserRepository;
 import jakarta.transaction.Transactional;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class OpenAccountService {
     private final UserRepository userRepository;
     private final AccountRepository accountRepository;
     private final PasswordEncoder passwordEncoder;
-
-    public OpenAccountService(UserRepository userRepository, AccountRepository accountRepository, PasswordEncoder passwordEncoder) {
-        this.userRepository = userRepository;
-        this.accountRepository = accountRepository;
-        this.passwordEncoder = passwordEncoder;
-    }
 
     @Transactional
     public OpenAccountResponse openAccount(OpenAccountRequest request){
